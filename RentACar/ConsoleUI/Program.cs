@@ -1,4 +1,4 @@
-﻿//Degisklenler
+﻿# region Degiskenler
 
 // DRY: Do not Repeat Yourself
 //mccall software quality model
@@ -40,4 +40,39 @@ Console.WriteLine(takmaAd?.ToUpper()); // takmaAd null ise ToUpper metodunu çal
 
 Console.WriteLine(takmaAd ?? "Takma ismi bulunmuyor"); // takmaAd null ise sağdaki değeri bize verecek.
 
+
+int sayi1 = 10;
+int say2 = 20;
+int sayi3 = 30;
+int sonuc = sayi1 + sayi2* sayi3;
+
+string isim2 = "Ahmet";
+string soyad = " Çetinkaya";
+string tamIsim=isim2 + "" +soyad;
+
+bool durum1 = true;
+bool durum2 = false;
+bool sonDurum = durum1 && durum2; // false
+bool sonDurum2 = durum1 || durum2; // true 
+
+
+int tamSayi =10;
+double ondalikliSayi = tamSayi; //10.0 //Implisit (bilinçsiz tür dönüşümü)
+
+double ondalikliSayi2 = 10.5;
+// int tamSayi2 = ondalikliSayi2; // Veri kaybı olacağı için implist şekilde tür dönüşümü yapacaktır.
+int tamSayi2 = (int)ondalikliSayi2;//Explist (bilinçli) tür dönüşümü 
+
+long buyukTamSayi = long.MaxValue; //64-bit
+int normalTamSayi = (int)buyukTamSayi; //64-bit -> 32-bit /Hata:-1
+
+// int normalTamSayi2 = Convert.ToInt32(buyukTamSayi); // Error:değer int'e göre ço k büyük
+string metinselTamSayi = buyukTamSayi.ToString();
+
+//bool 2OndalıkSayi //Invalid
+//double ondaklik_sayi=long.MaxValue; //Valid
+//double @double =double.MaxValue;
+//double ondalik sayi =long.MaxValue;//Invalid
+
+#endregion 
 

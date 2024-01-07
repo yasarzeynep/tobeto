@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\zy_ya_000\\Downloads\\RentACar\\ConsoleUI\\ConsoleUI.csproj": {}
+    "C:\\Users\\zy_ya_000\\Desktop\\TobetoLesson\\RentACar\\ConsoleUI\\ConsoleUI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\zy_ya_000\\Downloads\\RentACar\\ConsoleUI\\ConsoleUI.csproj": {
+    "C:\\Users\\zy_ya_000\\Desktop\\TobetoLesson\\RentACar\\ConsoleUI\\ConsoleUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zy_ya_000\\Downloads\\RentACar\\ConsoleUI\\ConsoleUI.csproj",
+        "projectUniqueName": "C:\\Users\\zy_ya_000\\Desktop\\TobetoLesson\\RentACar\\ConsoleUI\\ConsoleUI.csproj",
         "projectName": "ConsoleUI",
-        "projectPath": "C:\\Users\\zy_ya_000\\Downloads\\RentACar\\ConsoleUI\\ConsoleUI.csproj",
+        "projectPath": "C:\\Users\\zy_ya_000\\Desktop\\TobetoLesson\\RentACar\\ConsoleUI\\ConsoleUI.csproj",
         "packagesPath": "C:\\Users\\zy_ya_000\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zy_ya_000\\Downloads\\RentACar\\ConsoleUI\\obj\\",
+        "outputPath": "C:\\Users\\zy_ya_000\\Desktop\\TobetoLesson\\RentACar\\ConsoleUI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\zy_ya_000\\AppData\\Roaming\\NuGet\\NuGet.Config",
