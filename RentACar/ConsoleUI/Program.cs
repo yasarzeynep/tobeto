@@ -203,3 +203,14 @@ do
 } while (false); // Her döngünün sonunda kontrol ettiğimiz koşul
 Console.WriteLine("Program Bitti.");
 #endregion
+
+#region Metot ve Fonksiyonlar
+//[Döndürülen değerin veri tipi] [METOTUN İSMİ] ( [PARAMETERLER] ) { }
+int topla (int sayi1, int sayi2) //Fonksiyon
+{
+    int toplamaSonuc = sayi1 + sayi2;
+    return toplamaSonuc;
+} //Modülerlik 
+int sonuc1 = topla(10, 20);
+int sonuc2= topla(20, 30); //Tekrar kullanılabilir //Okunabilirlik
+#endregion
