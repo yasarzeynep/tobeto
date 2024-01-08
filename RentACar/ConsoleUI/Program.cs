@@ -206,11 +206,48 @@ Console.WriteLine("Program Bitti.");
 
 #region Metot ve Fonksiyonlar
 //[Döndürülen değerin veri tipi] [METOTUN İSMİ] ( [PARAMETERLER] ) { }
-int topla (int sayi1, int sayi2) //Fonksiyon
+void yazdir(string icerik)
+{
+    
+    Console.WriteLine(icerik); //Printer'a içeriği yazdıran fonksiyon olarak düşünebiliriz.
+}
+//Fonksiyon
+int topla (
+    // Parametre tanımlama özellikleri
+    int sayi1, //Zorunlu parametre
+    int sayi2=0, //Opsiyonel parametre //En son olcak sekilde kullanabiliriz
+     int sayi3 = 10
+    ) 
 {
     int toplamaSonuc = sayi1 + sayi2;
+    //..
+    //..
+
     return toplamaSonuc;
 } //Modülerlik 
-int sonuc1 = topla(10, 20);
-int sonuc2= topla(20, 30); //Tekrar kullanılabilir //Okunabilirlik
+
+//Fonksiyonlarda overload yok, metotlarda yapılabilir
+
+// Parametre verme biçimleri
+int sonuc1 = topla(50,10); // Paramete pozisyon bazlı parametre geçtik
+int sonuc2= topla(sayi2:40, sayi1:30); //Tekrar kullanılabilir //Okunabilirlik //parametre isim bazlı parametre
+
+yazdir(sonuc.ToString());//Pozisyon bazlı parametre
+yazdir(icerik:sonuc.ToString());//parametre isim bazlı parametre
+
+//Params
+int hepsiniTopla(
+    // Parametre tanımlama özellikleri
+    int baslangicSayisi, params int[] sayilar)// params sadece bir tane ve en son olacak şekilde kullanabiliriz.
+{
+    int toplam = baslangicSayisi;
+    foreach (int sayi in sayilar)
+    {
+        toplam += sayi;
+    }
+ return toplam;
+}
+int sonuc3=hepsiniTopla(0, 10, 20, 30, 40, 50);
+
+//ref, aut  // Temel //İlkel veri tipleri üzerinde kullanılır.
 #endregion
