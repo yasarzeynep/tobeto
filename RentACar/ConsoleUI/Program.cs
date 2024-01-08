@@ -9,6 +9,7 @@
 //Bellekte kaplaycagı  alabı  onceden ayırmıs oluyoruz hem de, alabileceği  dğerleri ve aralıgını belirlemis oluyoruz
 
 //ilkel/değer tip 
+using System;
 using System.Globalization;
 
 int yil=2023; // 32-bit  ~- 2.1mr - ~2.1mr // default değeri= 0 (ondalik) // 00000000(ikilik)
@@ -133,4 +134,72 @@ else if (komut == "delete")
 };
 Console.WriteLine(mesaj);
 
+#endregion
+
+#region Döngüler
+
+int sayi4 = 10;
+int sayi5 = sayi4++;
+
+int birArtirir(int sayi)
+{
+    int temp = sayi;
+    sayi = sayi + 1;
+    return temp;
+}
+int sayi6 = ++sayi4;
+
+int önceBirArtirir(int sayi)
+{
+    sayi = sayi + 1;
+    return sayi;
+}
+//int sayi6 = ++sayi4;
+//Console.WriteLine(sayi6);
+
+//Console.WriteLine(sayi5);
+//Console.WriteLine(sayi4);
+
+for (int index = 0; // Döngünün en başında bir kez çalışır
+     index < 10; // Her döngünün başında kontrol ettiğimiz koşul
+      ++index  //index++ //index=index+1 //Her döngünün sonunda çalışan ayama komutumuz
+        ) 
+{
+    //int index=0;
+    //index<10;
+    //İşlemler
+    //index=++index;
+    if (index == 5)
+        continue; //Bir döngü adımına geçmeden bir sonraki  döngü adımına geçer.
+    if (index == 7)
+        break; //Döngü sürecini tamamen bitirir.
+
+    //for(int i = 0; i < 10; ++i)
+    //{ if (i == 0) continue;}
+    Console.WriteLine(index);
+}
+int index2 = 0;
+while( index2 < 10)
+{
+    // if (index2 == 5) continue; //Sonsuz döngü oluşturmuş oluruz.
+    if (index2 == 5)
+    {
+        index2 += 1;
+        continue;
+    }
+    Console.WriteLine(index2);
+    index2 += 1;
+}
+
+//while (true) //Sonsuz döngülerden her saim kacınmamız gerekiyor, çünkü program o noktada yıkanacaktır
+//{
+//İstisna durumlarda sürekli  kontrol için sonsuz düngüler oluşturulabilir.Fakat programı aksatmayacak şekilde olmalıdır
+//}
+
+do
+{
+    // Döngünün ilk adımında herhangi bir koşula tabi olmadan ilgili işlemler yapılır
+    // Döngünün sonraki adımlarında
+} while (false); // Her döngünün sonunda kontrol ettiğimiz koşul
+Console.WriteLine("Program Bitti.");
 #endregion
