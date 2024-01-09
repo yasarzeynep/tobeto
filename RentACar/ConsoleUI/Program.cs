@@ -9,6 +9,7 @@
 //Bellekte kaplaycagı  alabı  onceden ayırmıs oluyoruz hem de, alabileceği  dğerleri ve aralıgını belirlemis oluyoruz
 
 //ilkel/değer tip 
+using ConsoleUI;
 using System;
 using System.Globalization;
 
@@ -249,5 +250,23 @@ int hepsiniTopla(
 }
 int sonuc3=hepsiniTopla(0, 10, 20, 30, 40, 50);
 
-//ref, aut  // Temel //İlkel veri tipleri üzerinde kullanılır.
+//ref, out // Temel //İlkel veri tipleri üzerinde kullanılır.
+
+//ref; fonksiyona kendi içinde değişken oluşturma, referans ettiğim değişkeni kullan demiş oluyoruz.
+void ikiyleCarpımınıDosyaOlarakKaydet(ref int sayi, out int sayi2)
+{
+    sayi *= 2;
+    sayi2 = 1;// out, fonksiyon/Metot içinde ilk atama işlemini verme zorunluğuğu getirir.
+
+    //... bu parametre degiskeninin kullanrak baska islemler, yaptıgını varsayalım
+    Console.WriteLine($"ikiyleCarpımınıDosyaOlarakKaydet scope sayi:{sayi}");
+}
+int sayi = 2;
+int sayiOut ;
+ikiyleCarpımınıDosyaOlarakKaydet(ref sayi,out sayiOut);
+Console.WriteLine($"ana scope sayi: {sayi}" +" "+  $"sayiOut: {sayiOut}");
+
+// Metot
+MathHelper mathHelper = new MathHelper(); // referans tip
+mathHelper.topla(1, 2);
 #endregion
