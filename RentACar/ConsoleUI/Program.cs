@@ -12,6 +12,7 @@
 using ConsoleUI;
 using System;
 using System.Globalization;
+using System.Reflection;
 
 int yil=2023; // 32-bit  ~- 2.1mr - ~2.1mr // default değeri= 0 (ondalik) // 00000000(ikilik)
 //short yil = 2023; //16-bit  ~-32bin - ~32bin
@@ -269,4 +270,25 @@ Console.WriteLine($"ana scope sayi: {sayi}" +" "+  $"sayiOut: {sayiOut}");
 // Metot
 MathHelper mathHelper = new MathHelper(); // referans tip
 mathHelper.topla(1, 2);
+#endregion
+
+#region Diziler ve Koleksiyonlar
+// Referans Tip
+Console.WriteLine("------------Diziler ve Koleksiyon--------------");
+string [] sıra= new string[5]; // 5 dizinin icerisindeki yer sayısı
+sıra[0] = "Muhammet";
+sıra[2] = "Umut";
+
+//Console.WriteLine($"sıra dizisindeki 2.indexteki degeri {sıra[2]}");
+for (int index = 0; index < sıra.Length; index++)
+{
+    string sıradakiKisininAdı = sıra[index];
+    Console.WriteLine($"sıra dizisindeki {index}.indexteki degeri {sıradakiKisininAdı ?? "null"}");
+   //string dizide: Console.WriteLine($"sıra dizisindeki {index}.indexteki degeri {sıradakiKisininAdı ?? "Bos"}");
+}
+//foreach (var sıradakiKisininAdı in sıra)
+//{
+//    Console.WriteLine(sıradakiKisininAdı);
+//} 
+
 #endregion
