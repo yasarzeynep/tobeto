@@ -11,6 +11,7 @@
 //ilkel/değer tip 
 using ConsoleUI;
 using System;
+using System.Collections;
 using System.Globalization;
 using System.Reflection;
 
@@ -273,22 +274,101 @@ mathHelper.topla(1, 2);
 #endregion
 
 #region Diziler ve Koleksiyonlar
-// Referans Tip
-Console.WriteLine("------------Diziler ve Koleksiyon--------------");
-string [] sıra= new string[5]; // 5 dizinin icerisindeki yer sayısı
-sıra[0] = "Muhammet";
-sıra[2] = "Umut";
 
-//Console.WriteLine($"sıra dizisindeki 2.indexteki degeri {sıra[2]}");
-for (int index = 0; index < sıra.Length; index++)
+Console.WriteLine("------------Diziler ve Koleksiyon--------------");
+// Referans Tip
+string[] sira = new string[5]; // 5 dizinin icerisindeki "Sabit" yer sayısı
+sira[0] = "Muhammet";
+sira[2] = "Umut";
+
+//Console.WriteLine($"sira dizisindeki 2.indexteki degeri {sira[2]}");
+for (int index = 0; index < sira.Length; index++)
 {
-    string sıradakiKisininAdı = sıra[index];
-    Console.WriteLine($"sıra dizisindeki {index}.indexteki degeri {sıradakiKisininAdı ?? "null"}");
-   //string dizide: Console.WriteLine($"sıra dizisindeki {index}.indexteki degeri {sıradakiKisininAdı ?? "Bos"}");
+    string siradakiKisininAdı = sira[index];
+    Console.WriteLine($"sira dizisindeki {index}.indexteki degeri {siradakiKisininAdı ?? "null"}");
+    //string dizide: Console.WriteLine($"sira dizisindeki {index}.indexteki degeri {siradakiKisininAdı ?? "Bos"}");
 }
-//foreach (var sıradakiKisininAdı in sıra)
+//foreach (var siradakiKisininAdı insira)
 //{
-//    Console.WriteLine(sıradakiKisininAdı);
+//    Console.WriteLine(siradakiKisininAdı);
 //} 
+
+string[] sira2 = { "Muhammet", "Umut" }; // new string[2] //Verdiğimiz başlangıc degeri kadar array olusturacaktır.
+string[] sira3 = new string[5]
+{
+        "Muhammet",
+        "Umut",
+        "Berkay",
+        "Emir",
+        "İlhami",
+};
+
+sira3[5] = "Hacer"; //Error
+//string[] sira4 = new string[6];
+//for (int i= 0;i<sira3.Length;i++)
+//{
+//    sira4[i] = sira3[i];
+//}
+
+//Array.Resize(ref sira3, 6);
+//sira3[5] = "Hacer";
+
+//string[,] cokluSira=new string[2, 2];
+//cokluSira[0, 0] = "Güven";
+//cokluSira[0, 1] = "Ahmet";
+
+//Array.Sort(cokluSira);
+//Array.Fill(sira3, "Null");
+
+//bool ahmetVarMi = sira.Contains("Ahmet");
+//string siraString = string.Join(", ", sira);
+//Console.WriteLine(siraString);
+
+// Koleksiyon
+Console.WriteLine("--------Koleksiyonlar----------");
+
+//List
+List<string> sira4 = new List<string>();
+sira4.Add("Ahmet");
+sira4.Add("Hacer");
+sira4.Add("Emir");
+sira4.Remove("Ahmet");
+
+foreach (string siradakiIsim in sira4)
+{
+    Console.WriteLine(siradakiIsim);
+}
+
+// Dictionary
+// Anahtar ve Değer eşleşmesiyle bir sözlük yapısı oluşturur.
+//Dictionary<string, string> keyValuePairs = new Dictionary<string, string>();
+Dictionary<string, string> sira5 = new();
+
+sira5.Add(key: "Birinci Sıra", value: "Ahmet");
+
+foreach (KeyValuePair<string, string > siradaki in sira5)
+{
+    Console.WriteLine($"{siradaki.Key}, {siradaki.Value}"); 
+}
+
+// ArrayList 
+// Elaman veri tipi dinamiktir.
+ArrayList sira6 = new();
+sira6.Add("Ahmet");
+sira6.Add(null);
+sira6.Add(15);
+sira6.Add(true);
+
+// LinkedList
+LinkedList<string> sira7 = new();
+sira7.AddFirst("Ahmet");
+var sira7Iliski=sira7.First.Next.Previous.Value;
+
+// HashSet
+// İcindeki elemanları tamamen birbirinden farklı olmak durumunda
+HashSet<string> katilimcilar = new();
+
+katilimcilar.Add("ahmet@tobeto.com");
+katilimcilar.Add("said@tobeto.com");
 
 #endregion
