@@ -303,7 +303,7 @@ string[] sira3 = new string[5]
         "İlhami",
 };
 
-sira3[5] = "Hacer"; //Error
+//sira3[5] = "Hacer"; //Error
 //string[] sira4 = new string[6];
 //for (int i= 0;i<sira3.Length;i++)
 //{
@@ -334,21 +334,21 @@ sira4.Add("Hacer");
 sira4.Add("Emir");
 sira4.Remove("Ahmet");
 
-foreach (string siradakiIsim in sira4)
-{
-    Console.WriteLine(siradakiIsim);
-}
+//foreach (string siradakiIsim in sira4)
+//{
+//    Console.WriteLine(siradakiIsim);
+//}
 
 // Dictionary
 // Anahtar ve Değer eşleşmesiyle bir sözlük yapısı oluşturur.
-//Dictionary<string, string> keyValuePairs = new Dictionary<string, string>();
+Dictionary<string, string> keyValuePairs = new Dictionary<string, string>();
 Dictionary<string, string> sira5 = new();
 
 sira5.Add(key: "Birinci Sıra", value: "Ahmet");
 
-foreach (KeyValuePair<string, string > siradaki in sira5)
+foreach (KeyValuePair<string, string> siradaki in sira5)
 {
-    Console.WriteLine($"{siradaki.Key}, {siradaki.Value}"); 
+    Console.WriteLine($"{siradaki.Key}, {siradaki.Value}");
 }
 
 // ArrayList 
@@ -362,7 +362,7 @@ sira6.Add(true);
 // LinkedList
 LinkedList<string> sira7 = new();
 sira7.AddFirst("Ahmet");
-var sira7Iliski=sira7.First.Next.Previous.Value;
+//var sira7Iliski = sira7.First.Next.Previous.Value;
 
 // HashSet
 // İcindeki elemanları tamamen birbirinden farklı olmak durumunda
@@ -370,5 +370,30 @@ HashSet<string> katilimcilar = new();
 
 katilimcilar.Add("ahmet@tobeto.com");
 katilimcilar.Add("said@tobeto.com");
+
+#endregion
+#region Class
+//Referans Tip
+// Class'lar Nesneler oluiturmak icin bir sablondur diyebiliriz.
+Console.WriteLine("-------Class--------");
+Ogrenci ogrenci = new(); // Nesne // Referans
+ogrenci.FirstName = "Ahmet";
+ogrenci.LastName = "Cetinkaya";
+
+Console.WriteLine(ogrenci.FullName);
+
+Ogrenci ogrenci1 = new()
+{
+    FirstName = "Muhammet",
+    LastName = "Mutlo",
+    Yas = 25,
+};
+Console.WriteLine($"ogrenci1 :{ogrenci1.FirstName}--{ogrenci1.LastName}--{ogrenci1.Yas}");
+
+Ogrenci ogrenci2 = ogrenci1;
+ogrenci1.LastName = "Mutlu";
+
+Console.WriteLine($"{ogrenci1.FirstName}--{ogrenci1.LastName}--{ogrenci1.Yas}");
+Console.WriteLine($"{ogrenci2.FirstName}--{ogrenci2.LastName}--{ogrenci2.Yas}");
 
 #endregion
