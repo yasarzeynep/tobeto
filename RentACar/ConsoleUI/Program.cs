@@ -372,13 +372,15 @@ katilimcilar.Add("ahmet@tobeto.com");
 katilimcilar.Add("said@tobeto.com");
 
 #endregion
+
 #region Class
 //Referans Tip
+//C# Nesne Dayalı (OOP) Programlama Dili
 // Class'lar Nesneler oluiturmak icin bir sablondur diyebiliriz.
 Console.WriteLine("-------Class--------");
 Ogrenci ogrenci = new(); // Nesne // Referans
 ogrenci.FirstName = "Ahmet";
-ogrenci.LastName = "Cetinkaya";
+ogrenci.LastName = "Cetinkaya";//
 
 Console.WriteLine(ogrenci.FullName);
 
@@ -386,7 +388,7 @@ Ogrenci ogrenci1 = new()
 {
     FirstName = "Muhammet",
     LastName = "Mutlo",
-    Yas = 25,
+    Yas = 25
 };
 Console.WriteLine($"ogrenci1 :{ogrenci1.FirstName}--{ogrenci1.LastName}--{ogrenci1.Yas}");
 
@@ -396,4 +398,23 @@ ogrenci1.LastName = "Mutlu";
 Console.WriteLine($"{ogrenci1.FirstName}--{ogrenci1.LastName}--{ogrenci1.Yas}");
 Console.WriteLine($"{ogrenci2.FirstName}--{ogrenci2.LastName}--{ogrenci2.Yas}");
 
+#endregion
+
+#region Deger ve Referans Veri Tipleri
+//Deger Veri Tipleri
+int number1  = 10;
+int number2 = 20;
+int toplam = number1 + number2;
+
+number2 = number1;
+number1 = 30;
+Console.WriteLine(number2); //10
+
+//Referans Veri Tipleri
+string[] cities1 = new string[2] { "Konya", "Istanbul" };
+string[] cities2 = new string[2] { "Ankara", "Izmir" };
+
+cities2 = cities1;
+cities1[0] = "Antalya";
+Console.WriteLine(cities2[0]); //Antalya
 #endregion
