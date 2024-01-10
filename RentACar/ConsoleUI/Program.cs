@@ -468,3 +468,21 @@ stringBuilder.Append(" Güzeldir**");  // 0x9284
 Console.WriteLine(stringBuilder.ToString()); // 0x7292 // Allocation
 
 #endregion
+
+#region Nesne Yönelimli Programlama (OOP)
+/*Object Oriented Programming
+ *Sınıflar ve Nesneler:Yazılım, gerçek dünyadaki ve iş sürecindeki nesnelerin tanımı ve
+  davranışlarını içeren sınıflardır, ve sınıflarla üretilen nesnelerle oluşur.
+ *
+ *Kapsüllme (Encapsulation): Özellikleri, davranışları bir arada tutmak  ve bunlara dışardan erişimini kontrol edebilmemiz
+ *
+ *Katılım (Inheritance): Sınıflar arasında bir "parent-child" ilişkisi kurulması ve bir sınıfın özellikleri ve davranışlarını 
+ *diğer sınıfa miras olarak geçebilmesidir.Böylece yazılımın bazı parçaları tekrar kullanabilir.
+ *
+ *Çok Biçimlilik (Polymorphism) : Aynı isimdeki davranışların farklı sınıflarda farklı şekilerde davranabilmesini sağlar.
+ *Bu da yazılımda esnekliği artırır. Base Class'lar Child 
+ *
+ *Soyutlama (Abstract) : Karmaşık sistemleri  basitleştirmek için ortak özellikleri belirleyerek soyutlama gerçek hayatta oldduğu gibi
+ *soyutlama yapılır.
+*/
+#endregion
