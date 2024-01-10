@@ -402,19 +402,27 @@ Console.WriteLine($"{ogrenci2.FirstName}--{ogrenci2.LastName}--{ogrenci2.Yas}");
 
 #region Deger ve Referans Veri Tipleri
 //Deger Veri Tipleri
-int number1  = 10;
-int number2 = 20;
-int toplam = number1 + number2;
+int number1  = 10; //10  //30
+int number2 = 20; //10  //20
+//int toplam = number1 + number2;
 
-number2 = number1;
-number1 = 30;
+number2 = number1; //number2: 20->10
+number1 = 30; ////number1: 10->30
 Console.WriteLine(number2); //10
 
 //Referans Veri Tipleri
-string[] cities1 = new string[2] { "Konya", "Istanbul" };
-string[] cities2 = new string[2] { "Ankara", "Izmir" };
+string[] cities1 = //0x3271 (Hexidecimal 16'lık  sayı  sistemindeki sayı)
+    new string[2] { "Konya", "Istanbul" }; //Veri HEAP'daki ayrılan yere yerleitirilir, örneğin adresi 0x3271
+string[] cities2 //0x5271
+    = new string[2] { "Ankara", "Izmir" }; //Veri HEAP'daki ayrılan yere yerleitirilir, örneğin adresi 0x5271
 
-cities2 = cities1;
-cities1[0] = "Antalya";
+cities2 = cities1; // 0x5271 --> 0x3271
+
+//for (int i = 0; i < cities1.Length; i++)
+//    cities2[i] // 0x5271
+//    = cities1[i];
+
+cities1[0] // 0x3271
+    = "Antalya";
 Console.WriteLine(cities2[0]); //Antalya
 #endregion
