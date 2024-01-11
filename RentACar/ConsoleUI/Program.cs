@@ -379,26 +379,26 @@ katilimcilar.Add("said@tobeto.com");
 //Referans Tip
 //C# Nesne Dayalı (OOP) Programlama Dili
 // Class'lar Nesneler oluiturmak icin bir sablondur diyebiliriz.
-Console.WriteLine("-------Class--------");
-Student ogrenci = new(); // Nesne // Referans
-ogrenci.FirstName = "Ahmet";
-ogrenci.LastName = "Cetinkaya";//
+//Console.WriteLine("-------Class--------");
+//Student ogrenci = new(); // Nesne // Referans
+//ogrenci.FirstName = "Ahmet";
+//ogrenci.LastName = "Cetinkaya";//
 
-Console.WriteLine(ogrenci.FullName);
+//Console.WriteLine(ogrenci.FullName);
 
-Student ogrenci1 = new()
-{
-    FirstName = "Muhammet",
-    LastName = "Mutlo",
-    Yas = 25
-};
-Console.WriteLine($"ogrenci1 :{ogrenci1.FirstName}--{ogrenci1.LastName}--{ogrenci1.Yas}");
+//Student ogrenci1 = new()
+//{
+//    FirstName = "Muhammet",
+//    LastName = "Mutlo",
+//    Yas = 25
+//};
+//Console.WriteLine($"ogrenci1 :{ogrenci1.FirstName}--{ogrenci1.LastName}--{ogrenci1.Yas}");
 
-Student ogrenci2 = ogrenci1;
-ogrenci1.LastName = "Mutlu";
+//Student ogrenci2 = ogrenci1;
+//ogrenci1.LastName = "Mutlu";
 
-Console.WriteLine($"{ogrenci1.FirstName}--{ogrenci1.LastName}--{ogrenci1.Yas}");
-Console.WriteLine($"{ogrenci2.FirstName}--{ogrenci2.LastName}--{ogrenci2.Yas}");
+//Console.WriteLine($"{ogrenci1.FirstName}--{ogrenci1.LastName}--{ogrenci1.Yas}");
+//Console.WriteLine($"{ogrenci2.FirstName}--{ogrenci2.LastName}--{ogrenci2.Yas}");
 
 #endregion
 
@@ -488,25 +488,28 @@ Console.WriteLine(stringBuilder.ToString()); // 0x7292 // Allocation
 */
 
 int lastId = 0;
-
-
-Student student= new()
-{
-    FirstName = "Emir",
-    LastName = "Karameke",
-    Email = "emir@example.com",
-    Password = "Password"
-};
-
-student.Id = ++lastId;
-
-Instructor instructor = new()
-{
-    FirstName = "Ahmet",
-    LastName = "Çetinkaya",
-    Email = "ahmet@example.com",
-    Password = "Password"
-};
-instructor.Id = ++lastId;
-
+User user = new User(id:lastId++, firstName:"Hacer Sema", lastName:"Aktas", nickName:"Hacer.Aktas", email:"hacer@example.com", password:"1234");
+ 
+Console.WriteLine("----------------------");
+Student student= new(
+        id: ++lastId,
+        firstName: "Emir",
+        lastName: "Karameke",
+        nickName: "emir.karameke",
+        email: "emir@example.com",
+        password: "123456",
+        phoneNumer: "123456",
+        yas: 25
+    );
+Console.WriteLine("----------------------");
+Instructor instructor = new(
+        id: ++lastId,
+        firstName: "Ahmet",
+        lastName: "Çetinkaya",
+        nickName: "ahmet.cetinkaya",
+        email: "ahmet@example.com",
+        password: "123456",
+        field: "Software"
+    );
+//Console.WriteLine(instructor.Password);
 #endregion
