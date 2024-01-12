@@ -481,16 +481,32 @@ Console.WriteLine(stringBuilder.ToString()); // 0x7292 // Allocation
  *Böylece yazılımın bazı parçaları tekrar kullanabilir.
  *
  *Çok Biçimlilik (Polymorphism) : Aynı isimdeki davranışların farklı sınıflarda farklı şekilerde davranabilmesini sağlar.
- *Bu da yazılımda esnekliği artırır. Base Class'lar Child 
+ *Bu da yazılımda esnekliği artırır.Ek olarak;Base Class'lar Child class'ların referanslarını tutabiliyorlar.
  *
  *Soyutlama (Abstract) : Karmaşık sistemleri  basitleştirmek için ortak özellikleri belirleyerek soyutlama gerçek hayatta oldduğu gibi
  *soyutlama yapılır.
 */
 
-int lastId = 0;
-User user = new User(id:lastId++, firstName:"Hacer Sema", lastName:"Aktas", nickName:"Hacer.Aktas", email:"hacer@example.com", password:"1234");
- 
+
+User user = new User(
+    id:lastId++, 
+    firstName:"Hacer Sema", 
+    lastName:"Aktas", 
+    nickName:"Hacer.Aktas", 
+    email:"hacer@example.com", 
+    password:"1234");
+Entity user1 = new User(
+    id: lastId++,
+    firstName: "Hacer Sema",
+    lastName: "Aktas",
+    nickName: "Hacer.Aktas",
+    email: "hacer@example.com",
+    password: "12345");
+
+Console.WriteLine(user.Id);
+Console.WriteLine(user1.Id);
 Console.WriteLine("----------------------");
+int lastId = 0;
 Student student= new(
         id: ++lastId,
         firstName: "Emir",
@@ -501,6 +517,8 @@ Student student= new(
         phoneNumer: "123456",
         yas: 25
     );
+Console.WriteLine(user.Id);
+
 Console.WriteLine("----------------------");
 Instructor instructor = new(
         id: ++lastId,
@@ -512,4 +530,7 @@ Instructor instructor = new(
         field: "Software"
     );
 //Console.WriteLine(instructor.Password);
+//entityRepository.UpdateEntity(user);
+//entityRepository.UpdateEntity(student);
+//entityRepository.UpdateEntity(instructor);
 #endregion

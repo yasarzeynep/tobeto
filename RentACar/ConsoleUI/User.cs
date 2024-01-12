@@ -27,7 +27,14 @@
 
         private string hashPassword(string passwordToHash)
         {
+            generateId();
             return passwordToHash + "HASH136.@@!#A#S@";
+        }
+
+        protected override int generateId()
+        {
+            //int incrementIdExample = base.generateId(); // Base class'larki
+            return Convert.ToInt32(DateTime.UtcNow.Ticks);// Temsili kod örneğidir. Tüm oluşturulacak id verisinin benzersiz olması gerekir
         }
 
     }

@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HERO\\source\\repos\\tobeto\\RentACar\\ConsoleUI\\ConsoleUI.csproj": {}
+    "C:\\Users\\zy_ya_000\\source\\repos\\tobeto\\RentACar\\ConsoleUI\\ConsoleUI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HERO\\source\\repos\\tobeto\\RentACar\\ConsoleUI\\ConsoleUI.csproj": {
+    "C:\\Users\\zy_ya_000\\source\\repos\\tobeto\\RentACar\\ConsoleUI\\ConsoleUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HERO\\source\\repos\\tobeto\\RentACar\\ConsoleUI\\ConsoleUI.csproj",
+        "projectUniqueName": "C:\\Users\\zy_ya_000\\source\\repos\\tobeto\\RentACar\\ConsoleUI\\ConsoleUI.csproj",
         "projectName": "ConsoleUI",
-        "projectPath": "C:\\Users\\HERO\\source\\repos\\tobeto\\RentACar\\ConsoleUI\\ConsoleUI.csproj",
-        "packagesPath": "C:\\Users\\HERO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HERO\\source\\repos\\tobeto\\RentACar\\ConsoleUI\\obj\\",
+        "projectPath": "C:\\Users\\zy_ya_000\\source\\repos\\tobeto\\RentACar\\ConsoleUI\\ConsoleUI.csproj",
+        "packagesPath": "C:\\Users\\zy_ya_000\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\zy_ya_000\\source\\repos\\tobeto\\RentACar\\ConsoleUI\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\HERO\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\zy_ya_000\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -43,6 +39,12 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -59,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
