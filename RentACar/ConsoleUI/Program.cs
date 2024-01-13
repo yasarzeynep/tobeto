@@ -487,7 +487,7 @@ Console.WriteLine(stringBuilder.ToString()); // 0x7292 // Allocation
  *soyutlama yapılır.
 */
 
-
+//Entity entity = new Entity(); //
 User user = new User(
     id:lastId++, 
     firstName:"Hacer Sema", 
@@ -533,4 +533,9 @@ Instructor instructor = new(
 //entityRepository.UpdateEntity(user);
 //entityRepository.UpdateEntity(student);
 //entityRepository.UpdateEntity(instructor);
+
+IUserDal userDal = new SqlDbUserDal(); //new InMemoryUserDal();
+//Dependency Injection //IoC
+userDal.Add(user);
+
 #endregion

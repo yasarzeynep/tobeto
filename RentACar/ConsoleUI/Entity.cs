@@ -1,6 +1,6 @@
 ﻿namespace ConsoleUI;
 
-internal class Entity
+internal abstract class Entity
 {
     internal int Id { get;  }
     internal DateTime CreatedAt { get;  } //Read-Only Property
@@ -21,11 +21,13 @@ internal class Entity
         CreatedAt = DateTime.UtcNow;//Read-only özellikleri kurucu metotlarda ilk degerini verebiliyoruz.Fakar dısarıda veremıyoruz
      
         Console.WriteLine("Bir Entity(id) oluşturuldu.");
-    } 
+    }
     protected virtual int generateId()
     {
         return ++EntityIdHelper.LastId;
-    }
+    } // İsteğe bağlı olarak Entity'i kalıtım alan sınıflarda override edilebilir.
+
+    //protected abstract int generateId();//Entity'i katılım alan somut classlarda override edilmesi gerekiyor.
 }
 internal static class EntityIdHelper
 {
