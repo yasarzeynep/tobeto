@@ -1,8 +1,8 @@
-﻿
+﻿using Core.Entities;
 namespace Entities.Conrete;
 
-public class Brand
+public class Brand : Entity<int>
 {
-    public int Id { get; set; } 
+   
     public string Name { get; set; }
 }

@@ -1,0 +1,6 @@
+C:\Users\HERO\Source\Repos\tobeto\RentACar\Entities\obj\Debug\net8.0\Entities.csproj.AssemblyReference.cache
+C:\Users\HERO\Source\Repos\tobeto\RentACar\Entities\obj\Debug\net8.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HERO\Source\Repos\tobeto\RentACar\Entities\obj\Debug\net8.0\Entities.AssemblyInfoInputs.cache
+C:\Users\HERO\Source\Repos\tobeto\RentACar\Entities\obj\Debug\net8.0\Entities.AssemblyInfo.cs
+C:\Users\HERO\Source\Repos\tobeto\RentACar\Entities\obj\Debug\net8.0\Entities.csproj.CoreCompileInputs.cache
+C:\Users\HERO\Source\Repos\tobeto\RentACar\Entities\obj\Debug\net8.0\Entities.sourcelink.json

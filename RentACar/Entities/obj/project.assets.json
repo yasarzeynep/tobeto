@@ -1,26 +1,50 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Core.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Core/1.0.0": {
+      "type": "project",
+      "path": "../Core/Core.csproj",
+      "msbuildProject": "../Core/Core.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net8.0": [
+      "Core >= 1.0.0"
+    ]
   },
   "packageFolders": {
-    "C:\\Users\\zy_ya_000\\.nuget\\packages\\": {}
+    "C:\\Users\\HERO\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\zy_ya_000\\source\\repos\\tobeto\\RentACar\\Entities\\Entities.csproj",
+      "projectUniqueName": "C:\\Users\\HERO\\source\\repos\\tobeto\\RentACar\\Entities\\Entities.csproj",
       "projectName": "Entities",
-      "projectPath": "C:\\Users\\zy_ya_000\\source\\repos\\tobeto\\RentACar\\Entities\\Entities.csproj",
-      "packagesPath": "C:\\Users\\zy_ya_000\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\zy_ya_000\\source\\repos\\tobeto\\RentACar\\Entities\\obj\\",
+      "projectPath": "C:\\Users\\HERO\\source\\repos\\tobeto\\RentACar\\Entities\\Entities.csproj",
+      "packagesPath": "C:\\Users\\HERO\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\HERO\\Source\\Repos\\tobeto\\RentACar\\Entities\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\zy_ya_000\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\HERO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -33,7 +57,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\HERO\\source\\repos\\tobeto\\RentACar\\Core\\Core.csproj": {
+              "projectPath": "C:\\Users\\HERO\\source\\repos\\tobeto\\RentACar\\Core\\Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -61,7 +89,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

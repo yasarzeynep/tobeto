@@ -55,19 +55,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\zy_ya_000\\.nuget\\packages\\": {}
+    "C:\\Users\\HERO\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\zy_ya_000\\source\\repos\\tobeto\\RentACar\\ConsoleUI\\ConsoleUI.csproj",
+      "projectUniqueName": "C:\\Users\\HERO\\Source\\Repos\\tobeto\\RentACar\\ConsoleUI\\ConsoleUI.csproj",
       "projectName": "ConsoleUI",
-      "projectPath": "C:\\Users\\zy_ya_000\\source\\repos\\tobeto\\RentACar\\ConsoleUI\\ConsoleUI.csproj",
-      "packagesPath": "C:\\Users\\zy_ya_000\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\zy_ya_000\\source\\repos\\tobeto\\RentACar\\ConsoleUI\\obj\\",
+      "projectPath": "C:\\Users\\HERO\\Source\\Repos\\tobeto\\RentACar\\ConsoleUI\\ConsoleUI.csproj",
+      "packagesPath": "C:\\Users\\HERO\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\HERO\\Source\\Repos\\tobeto\\RentACar\\ConsoleUI\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\zy_ya_000\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\HERO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -114,7 +119,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

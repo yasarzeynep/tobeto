@@ -79,3 +79,4 @@ C:\Users\zy_ya_000\source\repos\tobeto\RentACar\ConsoleUI\obj\Debug\net7.0\Conso
 C:\Users\zy_ya_000\source\repos\tobeto\RentACar\ConsoleUI\obj\Debug\net7.0\ConsoleUI.dll
 C:\Users\zy_ya_000\source\repos\tobeto\RentACar\ConsoleUI\obj\Debug\net7.0\refint\ConsoleUI.dll
 C:\Users\zy_ya_000\source\repos\tobeto\RentACar\ConsoleUI\obj\Debug\net7.0\ConsoleUI.pdb
+C:\Users\HERO\Source\Repos\tobeto\RentACar\ConsoleUI\obj\Debug\net7.0\ConsoleUI.csproj.AssemblyReference.cache
