@@ -4,6 +4,72 @@
     "C:\\Users\\HERO\\source\\repos\\tobeto\\RentACar\\ConsoleUI\\ConsoleUI.csproj": {}
   },
   "projects": {
+    "C:\\Users\\HERO\\source\\repos\\tobeto\\RentACar\\Business\\Business.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\HERO\\source\\repos\\tobeto\\RentACar\\Business\\Business.csproj",
+        "projectName": "Business",
+        "projectPath": "C:\\Users\\HERO\\source\\repos\\tobeto\\RentACar\\Business\\Business.csproj",
+        "packagesPath": "C:\\Users\\HERO\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HERO\\source\\repos\\tobeto\\RentACar\\Business\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\HERO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\HERO\\source\\repos\\tobeto\\RentACar\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\HERO\\source\\repos\\tobeto\\RentACar\\DataAccess\\DataAccess.csproj"
+              },
+              "C:\\Users\\HERO\\source\\repos\\tobeto\\RentACar\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\HERO\\source\\repos\\tobeto\\RentACar\\Entities\\Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\HERO\\source\\repos\\tobeto\\RentACar\\ConsoleUI\\ConsoleUI.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -11,7 +77,7 @@
         "projectName": "ConsoleUI",
         "projectPath": "C:\\Users\\HERO\\source\\repos\\tobeto\\RentACar\\ConsoleUI\\ConsoleUI.csproj",
         "packagesPath": "C:\\Users\\HERO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HERO\\Source\\Repos\\tobeto\\RentACar\\ConsoleUI\\obj\\",
+        "outputPath": "C:\\Users\\HERO\\source\\repos\\tobeto\\RentACar\\ConsoleUI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -31,7 +97,11 @@
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\HERO\\source\\repos\\tobeto\\RentACar\\Business\\Business.csproj": {
+                "projectPath": "C:\\Users\\HERO\\source\\repos\\tobeto\\RentACar\\Business\\Business.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -66,6 +136,194 @@
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\HERO\\source\\repos\\tobeto\\RentACar\\Core\\Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\HERO\\source\\repos\\tobeto\\RentACar\\Core\\Core.csproj",
+        "projectName": "Core",
+        "projectPath": "C:\\Users\\HERO\\source\\repos\\tobeto\\RentACar\\Core\\Core.csproj",
+        "packagesPath": "C:\\Users\\HERO\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HERO\\source\\repos\\tobeto\\RentACar\\Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\HERO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\HERO\\source\\repos\\tobeto\\RentACar\\DataAccess\\DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\HERO\\source\\repos\\tobeto\\RentACar\\DataAccess\\DataAccess.csproj",
+        "projectName": "DataAccess",
+        "projectPath": "C:\\Users\\HERO\\source\\repos\\tobeto\\RentACar\\DataAccess\\DataAccess.csproj",
+        "packagesPath": "C:\\Users\\HERO\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HERO\\source\\repos\\tobeto\\RentACar\\DataAccess\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\HERO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\HERO\\source\\repos\\tobeto\\RentACar\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\HERO\\source\\repos\\tobeto\\RentACar\\Core\\Core.csproj"
+              },
+              "C:\\Users\\HERO\\source\\repos\\tobeto\\RentACar\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\HERO\\source\\repos\\tobeto\\RentACar\\Entities\\Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\HERO\\source\\repos\\tobeto\\RentACar\\Entities\\Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\HERO\\source\\repos\\tobeto\\RentACar\\Entities\\Entities.csproj",
+        "projectName": "Entities",
+        "projectPath": "C:\\Users\\HERO\\source\\repos\\tobeto\\RentACar\\Entities\\Entities.csproj",
+        "packagesPath": "C:\\Users\\HERO\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HERO\\source\\repos\\tobeto\\RentACar\\Entities\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\HERO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\HERO\\source\\repos\\tobeto\\RentACar\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\HERO\\source\\repos\\tobeto\\RentACar\\Core\\Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

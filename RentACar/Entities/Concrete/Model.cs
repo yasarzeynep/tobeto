@@ -2,7 +2,7 @@
 using Entities.Conrete;
 
 namespace Entities.Concrete;
-public class Model
+public class Model:Entity<int>
 {
     public int Id { get; set; }
     public int BrandId{ get; set; }

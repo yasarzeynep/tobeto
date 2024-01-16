@@ -1,4 +1,14 @@
-﻿#region Degiskenler
+﻿using System.Collections.Immutable;
+using System.Text;
+using System.Text.Json.Serialization;
+using Business.Abstract;
+using Business.Concrete;
+using ConsoleUI;
+using DataAccess.Abstract;
+using DataAccess.Concrete.InMemory;
+using Entities.Concrete;
+
+#region Degiskenler
 
 // DRY: Do not Repeat Yourself
 // mccall software quality model
@@ -9,13 +19,6 @@
 //Bellekte kaplaycagı  alabı  onceden ayırmıs oluyoruz hem de, alabileceği  dğerleri ve aralıgını belirlemis oluyoruz
 
 //ilkel/değer tip 
-using ConsoleUI;
-using System;
-using System.Collections;
-using System.Collections.Immutable;
-using System.Globalization;
-using System.Reflection;
-using System.Text;
 
 int yil=2023; // 32-bit  ~- 2.1mr - ~2.1mr // default değeri= 0 (ondalik) // 00000000(ikilik)
 //short yil = 2023; //16-bit  ~-32bin - ~32bin
@@ -85,6 +88,7 @@ double @double = double.MaxValue;
 long cokBuyukTamSayi = long.MaxValue;//Overflow error
 Console.WriteLine(cokBuyukTamSayi + 1);// Sayımız ilgili veri tipinin MinValue değerine geri döner.
 #endregion
+
 
 #region Koşullu İfadeler
 bool durum3 = false;
@@ -489,14 +493,14 @@ Console.WriteLine(stringBuilder.ToString()); // 0x7292 // Allocation
 
 //Entity entity = new Entity(); //
 User user = new User(
-    id:lastId++, 
+    //id:lastId++, 
     firstName:"Hacer Sema", 
     lastName:"Aktas", 
     nickName:"Hacer.Aktas", 
     email:"hacer@example.com", 
     password:"1234");
 Entity user1 = new User(
-    id: lastId++,
+    //id: lastId++,
     firstName: "Hacer Sema",
     lastName: "Aktas",
     nickName: "Hacer.Aktas",
@@ -507,7 +511,7 @@ Console.WriteLine(user.Id);
 Console.WriteLine(user1.Id);
 Console.WriteLine("----------------------");
 int lastId = 0;
-Student student= new(
+Student student= new Student(
         id: ++lastId,
         firstName: "Emir",
         lastName: "Karameke",
@@ -539,3 +543,12 @@ IUserDal userDal = new SqlDbUserDal(); //new InMemoryUserDal();
 userDal.Add(user);
 
 #endregion
+
+//Configuration.cs
+IBrandDal brandDal =new InMemoryUserDal();
+IBrandService brandService = new BrandManager(brandDal);
+//Configuration.cs
+
+//RentACar add brand BMW
+Brand brandToAdd = new Brand { Name ="BMW" };
+brandService.Add(brandToAdd);

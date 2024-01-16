@@ -1,0 +1,1 @@
+Sunum katmanından gelen bilgileri/istekleri gerekli is kosullarına göre isleyip  denetimini  gerceklestiren katmanımız
