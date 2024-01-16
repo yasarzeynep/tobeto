@@ -37,7 +37,7 @@
       "projectName": "Entities",
       "projectPath": "C:\\Users\\HERO\\source\\repos\\tobeto\\RentACar\\Entities\\Entities.csproj",
       "packagesPath": "C:\\Users\\HERO\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HERO\\Source\\Repos\\tobeto\\RentACar\\Entities\\obj\\",
+      "outputPath": "C:\\Users\\HERO\\source\\repos\\tobeto\\RentACar\\Entities\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

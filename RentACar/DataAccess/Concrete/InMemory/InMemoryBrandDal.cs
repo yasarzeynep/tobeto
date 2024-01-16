@@ -2,9 +2,10 @@
 using DataAccess.Abstract;
 using Entities.Conrete;
 
+
 namespace DataAccess.Concrete.InMemory;
 
-public class InMemoryBrandDal : InMemoryEntityRepositoryBase<Brand, int>, IBrandDal
+public class InMemoryBrandDal     //: InMemoryEntityRepositoryBase<Brand, int>, IBrandDal
 {
     // InMemoryEntityRepositoryBase<Brand, int> kalıtımın örnek uygulaması:
     //private readonly HashSet<Brand> _entities = new();
@@ -38,4 +39,5 @@ public class InMemoryBrandDal : InMemoryEntityRepositoryBase<Brand, int>, IBrand
     //{
     //    throw new NotImplementedException();
     //}
+    
 }
