@@ -1,4 +1,4 @@
-﻿
+﻿using System.Security.Cryptography;
 namespace Core.Entities;
 
 public abstract class TEntity<TId> : IEntity<TId>

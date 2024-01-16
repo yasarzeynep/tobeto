@@ -400,3 +400,26 @@ FodyWeavers.xsd
 # Additional files built by Visual Studio
 
 # End of https://www.toptal.com/developers/gitignore/api/VisualStudio
+RentACar/Entities/bin/Debug/net8.0/Core.pdb
+RentACar/Entities/bin/Debug/net8.0/Core.dll
+RentACar/Entities/bin/Debug/net8.0/Entities.pdb
+RentACar/Entities/obj/Debug/net8.0/Entities.csproj.BuildWithSkipAnalyzers
+RentACar/Entities/obj/Debug/net8.0/Entities.dll
+*.dll
+RentACar/RentACar.sln
+RentACar/Entities/obj/project.nuget.cache
+RentACar/Entities/obj/Entities.csproj.nuget.dgspec.json
+*.json
+*.txt
+*.dll
+*.BuildWithSkipAnalyzers
+*.vsidx
+*.dll
+*.pdb
+*.dll
+RentACar/Entities/obj/Debug/net8.0/refint/Entities.dll
+*.cache
+*.pdb
+*.bin
+*.bin
+*.v2

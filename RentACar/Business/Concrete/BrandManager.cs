@@ -20,7 +20,7 @@ public class BrandManager : IBrandService
     {
     //İs Kuralları
     //Validation
-    //Yetki  kONTROLÜ
+    //Yetki Kontrolü
     //Cache
     //Transaction
    
@@ -33,7 +33,7 @@ public class BrandManager : IBrandService
     {
         //İs Kuralları
         //Validation
-        //Yetki  kONTROLÜ
+        //Yetki Kontrolü
         //Cache
         //Transaction
 
