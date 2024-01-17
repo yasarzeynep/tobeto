@@ -1,6 +1,20 @@
+using Business.Abstract;
+using Business.BrandBusinessRules;
+using Business.Concrete;
+using DataAccess.Abstract;
+using DataAccess.Concrete.InMemory;
+using Microsoft.Extensions.DependencyInjection;
+using System;
+using System.Reflection;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddSingleton<IBrandService, BrandManager>();
+builder.Services.AddSingleton<IBrandDal, InMemoryBrandDal>();
+builder.Services.AddSingleton<BrandBusinessRules>();
+builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());  // AutoMapper.Extensions.Microsoft.DependencyInjection NuGet Paketi
+
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

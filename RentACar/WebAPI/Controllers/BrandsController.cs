@@ -16,10 +16,10 @@ namespace WebAPI.Controllers
     {
         private readonly IBrandService _brandService;
 
-        public BrandsController()
+        public BrandsController(IBrandService brandService)
         {
             //Her Http Request ıcın yeni  bir controller olusturur
-            _brandService = ServiceRegistration.BrandService;
+            _brandService = brandService;
             //Daha sonra Ioc Container yapımızı kurdugumuz Dependency Injection ile daha verimli  hale getirecegiz.
 
         }
