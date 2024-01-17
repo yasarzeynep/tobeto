@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "ZglSsZGTs5slYjMMteJiWuam8NO1hpgymNtzXl/78CSMKWEHt5Q7El5ATzYzxD2hXosq9PIERD9cDtEZ1aee4w==",
+  "dgSpecHash": "SYAPCepniqrlqZ145VfcbPAE92no+7pouy46ijlWRy6evSS+ZFqSiuyHU8o0MWBKys3SKmdmMMf4+WUpcwLTJg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\zy_ya_000\\source\\repos\\tobeto\\RentACar\\Business\\Business.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\HERO\\source\\repos\\tobeto\\RentACar\\Business\\Business.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\HERO\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\HERO\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
   "logs": []
 }

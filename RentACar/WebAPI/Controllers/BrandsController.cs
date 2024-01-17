@@ -1,5 +1,7 @@
 ﻿using Business.Abstract;
 using Business.Concrete;
+using Business.Request.Brand;
+using Business.Response.Brand;
 using DataAccess.Abstract;
 using DataAccess.Concrete.InMemory;
 using Entities.Conrete;
@@ -16,7 +18,7 @@ namespace WebAPI.Controllers
 
         public BrandsController()
         {
-            //Her Http Request ıcın yeni  bir controoller olusturur
+            //Her Http Request ıcın yeni  bir controller olusturur
             _brandService = ServiceRegistration.BrandService;
             //Daha sonra Ioc Container yapımızı kurdugumuz Dependency Injection ile daha verimli  hale getirecegiz.
 
@@ -45,10 +47,11 @@ namespace WebAPI.Controllers
 
         //[HttpPost("/add")] //Veri göndermek //http://localhost:5191/api/brands/add
         [HttpPost] //Veri göndermek //http://localhost:5191/api/brands
-        public Brand Add()
+        public ActionResult <AddBrandResponse> Add(AddBrandRequest request)
         {
-            Brand addedBrand=_brandService.Add(addBrandRequest);
-            return adddedBrand;
+            AddBrandResponse response=_brandService.Add(request);
+            //return response;//200 OK
+            return CreatedAtAction(nameof(GetList), response);//201 Created
         }
     }
 }

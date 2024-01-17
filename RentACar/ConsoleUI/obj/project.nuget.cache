@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "eZeaLBnbr6T/M48XiV1Pp2YBMFDodY5YN/JPhipKyxR8st3sYt/hBlHYwfunCTwtAdHpeSYO6vZOEf2OnvvqZA==",
+  "dgSpecHash": "92sBcahDB29oBEqrPGNmMX+9KenqEpbEA8rpGN17WKdKW6WwkHfWKQzs1SVGnlQj+cGahcRVBeZCYQp/liiVCQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\zy_ya_000\\source\\repos\\tobeto\\RentACar\\ConsoleUI\\ConsoleUI.csproj",
+  "projectFilePath": "C:\\Users\\HERO\\source\\repos\\tobeto\\RentACar\\ConsoleUI\\ConsoleUI.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\zy_ya_000\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+    "C:\\Users\\HERO\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\HERO\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\HERO\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": []
 }

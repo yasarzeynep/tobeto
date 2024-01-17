@@ -1,12 +1,5 @@
-C:\Users\zy_ya_000\source\repos\tobeto\RentACar\Core\bin\Debug\net8.0\Core.deps.json
-C:\Users\zy_ya_000\source\repos\tobeto\RentACar\Core\bin\Debug\net8.0\Core.dll
-C:\Users\zy_ya_000\source\repos\tobeto\RentACar\Core\bin\Debug\net8.0\Core.pdb
-C:\Users\zy_ya_000\source\repos\tobeto\RentACar\Core\obj\Debug\net8.0\Core.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\zy_ya_000\source\repos\tobeto\RentACar\Core\obj\Debug\net8.0\Core.AssemblyInfoInputs.cache
-C:\Users\zy_ya_000\source\repos\tobeto\RentACar\Core\obj\Debug\net8.0\Core.AssemblyInfo.cs
-C:\Users\zy_ya_000\source\repos\tobeto\RentACar\Core\obj\Debug\net8.0\Core.csproj.CoreCompileInputs.cache
-C:\Users\zy_ya_000\source\repos\tobeto\RentACar\Core\obj\Debug\net8.0\Core.sourcelink.json
-C:\Users\zy_ya_000\source\repos\tobeto\RentACar\Core\obj\Debug\net8.0\Core.dll
-C:\Users\zy_ya_000\source\repos\tobeto\RentACar\Core\obj\Debug\net8.0\refint\Core.dll
-C:\Users\zy_ya_000\source\repos\tobeto\RentACar\Core\obj\Debug\net8.0\Core.pdb
-C:\Users\zy_ya_000\source\repos\tobeto\RentACar\Core\obj\Debug\net8.0\ref\Core.dll
+C:\Users\HERO\source\repos\tobeto\RentACar\Core\obj\Debug\net8.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HERO\source\repos\tobeto\RentACar\Core\obj\Debug\net8.0\Core.AssemblyInfoInputs.cache
+C:\Users\HERO\source\repos\tobeto\RentACar\Core\obj\Debug\net8.0\Core.AssemblyInfo.cs
+C:\Users\HERO\source\repos\tobeto\RentACar\Core\obj\Debug\net8.0\Core.csproj.CoreCompileInputs.cache
+C:\Users\HERO\source\repos\tobeto\RentACar\Core\obj\Debug\net8.0\Core.sourcelink.json
