@@ -12,3 +12,4 @@ public class Brand : Entity<int>
         Name = name;
     }
 }
+

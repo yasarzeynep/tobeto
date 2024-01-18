@@ -7,5 +7,5 @@ namespace Business.Abstract;
 public interface IBrandService
 {
     public AddBrandResponse Add(AddBrandRequest request);
-    public IList<Brand> GetList(); //Brand Listesi donuyor
+    public GetBrandListResponse GetList(GetBrandListResponse request); //Brand Listesi donuyor
 }

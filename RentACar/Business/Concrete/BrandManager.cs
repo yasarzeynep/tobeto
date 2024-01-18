@@ -38,7 +38,7 @@ public class BrandManager : IBrandService
         return response;
     }
 
-    public IList<Brand> GetList()
+    public GetBrandListResponse GetList(GetBrandListResponse request)
     {
         //İs Kuralları
         //Validation

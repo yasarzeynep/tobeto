@@ -6,17 +6,17 @@ namespace Core.DataAccess.InMemory;
          IEntityRepository<TEntity, TEntityId>
 
          where TEntity : class, IEntity<TEntityId>, new()
-    {
+   {
     protected readonly HashSet<TEntity> _entities = new();
-    private abstract TEntityId generateId();
-    public void Add(TEntity entity)
-        {
-        entity.Id = generateId();
-           entity.CreatedAt = DateTime.UtcNow;
-        _entities.Add(entity);
-        }
+    protected abstract TEntityId generateId();
 
-        public void Delete(TEntity entity)
+    public void Add(TEntity entity)
+    {
+        entity.Id = generateId();
+        entity.CreatedAt = DateTime.UtcNow;
+        _entities.Add(entity);
+    }
+    public void Delete(TEntity entity)
         {
             entity.DeletedAt = DateTime.UtcNow;
         }

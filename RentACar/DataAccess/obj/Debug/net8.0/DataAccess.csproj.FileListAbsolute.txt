@@ -3,3 +3,4 @@ C:\Users\HERO\source\repos\tobeto\RentACar\DataAccess\obj\Debug\net8.0\DataAcces
 C:\Users\HERO\source\repos\tobeto\RentACar\DataAccess\obj\Debug\net8.0\DataAccess.AssemblyInfo.cs
 C:\Users\HERO\source\repos\tobeto\RentACar\DataAccess\obj\Debug\net8.0\DataAccess.csproj.CoreCompileInputs.cache
 C:\Users\HERO\source\repos\tobeto\RentACar\DataAccess\obj\Debug\net8.0\DataAccess.sourcelink.json
+C:\Users\HERO\source\repos\tobeto\RentACar\DataAccess\obj\Debug\net8.0\DataAccess.csproj.AssemblyReference.cache

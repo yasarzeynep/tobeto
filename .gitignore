@@ -423,3 +423,7 @@ RentACar/Entities/obj/Debug/net8.0/refint/Entities.dll
 *.bin
 *.bin
 *.v2
+RentACar/.vs/ProjectEvaluation/rentacar.metadata.v7.bin
+RentACar/Core/obj/Debug/net8.0/Core.csproj.FileListAbsolute.txt
+RentACar/Core/obj/Debug/net8.0/Core.AssemblyInfoInputs.cache
+RentACar/Core/obj/Debug/net8.0/Core.AssemblyInfo.cs
