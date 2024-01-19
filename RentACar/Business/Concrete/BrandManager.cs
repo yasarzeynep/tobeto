@@ -22,7 +22,7 @@ public class BrandManager : IBrandService
 
     public AddBrandResponse Add(AddBrandRequest request)
     {
-        _brandBusinessRules.CheckIfBrandNameNotExits(request.Name); //İs Kuralları
+        _brandBusinessRules.CheckIfBrandNameNotExists(request.Name); //İs Kuralları
     //İs Kuralları
     //Validation
     //Yetki Kontrolü
