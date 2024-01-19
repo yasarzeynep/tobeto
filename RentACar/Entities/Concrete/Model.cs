@@ -1,10 +1,10 @@
 ﻿
+using Core.Entities;
 using Entities.Conrete;
 
 namespace Entities.Concrete;
 public class Model:Entity<int>
 {
-    public int Id { get; set; }
     public int BrandId{ get; set; }
     public string Name { get; set; }
     public string Year { get; set; }

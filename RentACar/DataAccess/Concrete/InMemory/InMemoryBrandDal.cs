@@ -1,5 +1,4 @@
 ﻿using Core.DataAccess.InMemory;
-using Core.Entities;
 using DataAccess.Abstract;
 using Entities.Conrete;
 using System.Runtime.CompilerServices;
@@ -11,7 +10,8 @@ public class InMemoryBrandDal : InMemoryEntityRepositoryBase<Brand, int>, IBrand
 {
     protected override int generateId()
     {
-        int nextId = _entities.Count == 0 ? 1 
+        int nextId = _entities.Count == 0 
+            ? 1 
             : _entities.Max(e => e.Id) + 1;
         return nextId;
     }

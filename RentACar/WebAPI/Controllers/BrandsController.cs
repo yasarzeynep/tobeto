@@ -39,10 +39,10 @@ namespace WebAPI.Controllers
         //    }
 
         [HttpGet]
-        public ICollection<Brand> GetList()
+        public GetBrandListResponse GetList([FromQuery] GetBrandListRequest request) // Referans tipleri varsayılan olarak request body'den alır.
         {
-            IList<Brand> brandList = _brandService.GetList(); 
-            return brandList;
+            GetBrandListResponse response = _brandService.GetList(request);
+            return response;
         }
 
         //[HttpPost("/add")] //Veri göndermek //http://localhost:5191/api/brands/add

@@ -5,6 +5,7 @@ internal abstract class Entity
     internal int Id { get;  }
     internal DateTime CreatedAt { get;  } //Read-Only Property
     internal DateTime? LastUpdateAt { get; set; }
+    public DateTime LastUpdatedAt { get; internal set; }
 
     // internal readonly string CreatedAt;//Read-Only Field
 

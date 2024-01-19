@@ -1,18 +1,18 @@
-﻿using Business.Concrete;
+﻿
 using DataAccess.Abstract;
-using Entities.Conrete;
 
-namespace Business.BrandBusinessRules;
+namespace Business.BusinessRules;
 
 public class BrandBusinessRules
 {
-    private readonly IBrandDal brandDal;
+    private readonly IBrandDal _brandDal;
+    
 
     public BrandBusinessRules (IBrandDal brandDal)
     {
-        ;_brandDal=brandDal;
+        _brandDal=brandDal;
     }
-    public void CheckIfBrandNameAlreadyExists(string brandName)
+    public void CheckIfBrandNameNotExists(string brandName)
     {
         bool isExits = _brandDal.GetList().Any(b => b.Name == brandName);
         if (isExits)
@@ -20,5 +20,10 @@ public class BrandBusinessRules
             throw new Exception("Brand already exists.");
         }
 
+    }
+
+    internal void CheckIfBrandNameNotExits(string name)
+    {
+        throw new NotImplementedException();
     }
 }

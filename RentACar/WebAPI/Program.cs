@@ -1,5 +1,5 @@
 using Business.Abstract;
-using Business.BrandBusinessRules;
+using Business.BusinessRules;
 using Business.Concrete;
 using Business.DependencyResolves;
 using DataAccess.Abstract;

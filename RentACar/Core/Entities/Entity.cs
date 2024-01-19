@@ -1,7 +1,7 @@
 ﻿using System.Security.Cryptography;
 namespace Core.Entities;
 
-public abstract class IEntity<TId> : IEntity<TId>
+public abstract class Entity< TId > : IEntity< TId >
 {
     public TId Id { get; set ; } //
     public DateTime CreatedAt { get; set; }

@@ -7,6 +7,7 @@ using ConsoleUI;
 using DataAccess.Abstract;
 using DataAccess.Concrete.InMemory;
 using Entities.Concrete;
+using Entities.Conrete;
 
 #region Degiskenler
 
@@ -359,11 +360,11 @@ foreach (KeyValuePair<string, string> siradaki in sira5)
 
 // ArrayList 
 // Elaman veri tipi dinamiktir.
-ArrayList sira6 = new();
-sira6.Add("Ahmet");
-sira6.Add(null);
-sira6.Add(15);
-sira6.Add(true);
+//ArrayList sira6 = new();
+//sira6.Add("Ahmet");
+//sira6.Add(null);
+//sira6.Add(15);
+//sira6.Add(true);
 
 // LinkedList
 LinkedList<string> sira7 = new();
@@ -492,7 +493,7 @@ Console.WriteLine(stringBuilder.ToString()); // 0x7292 // Allocation
 */
 
 //Entity entity = new Entity(); //
-User user = new User(
+User user = new(
     //id:lastId++, 
     firstName:"Hacer Sema", 
     lastName:"Aktas", 
@@ -545,10 +546,10 @@ userDal.Add(user);
 #endregion
 
 //Configuration.cs
-IBrandDal brandDal =new InMemoryUserDal();
-IBrandService brandService = new BrandManager(brandDal);
+//IBrandDal brandDal =new InMemoryUserDal();
+//IBrandService brandService = new BrandManager(brandDal);
 //Configuration.cs
 
 //RentACar add brand BMW
-Brand brandToAdd = new Brand { Name ="BMW" };
-brandService.Add(brandToAdd);
+//Brand brandToAdd = new Brand { Name ="BMW" };
+//brandService.Add(brandToAdd);

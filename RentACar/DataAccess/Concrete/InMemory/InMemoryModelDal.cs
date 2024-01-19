@@ -6,5 +6,8 @@ namespace DataAccess.Concrete.InMemory;
 
 public class InMemoryModelDal : InMemoryEntityRepositoryBase<Model, int>, IModelDal
 {
-
+    protected override int generateId()
+    {
+        throw new NotImplementedException();
+    }
 }

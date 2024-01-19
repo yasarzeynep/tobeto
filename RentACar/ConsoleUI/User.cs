@@ -26,6 +26,15 @@
             Console.WriteLine("Bir User Olustu");
         }
 
+        public User(string firstName, string lastName, string nickName, string email, string password)
+        {
+            FirstName = firstName;
+            LastName = lastName;
+            Nickname = nickName;
+            Email = email;
+            Password = password;
+        }
+
         private string hashPassword(string passwordToHash)
         {
             generateId();
