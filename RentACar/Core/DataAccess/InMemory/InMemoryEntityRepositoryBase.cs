@@ -7,38 +7,44 @@ namespace Core.DataAccess.InMemory;
 
          where TEntity : class, IEntity<TEntityId>, new()
    {
-    protected readonly HashSet<TEntity> _entities = new();
+    protected readonly HashSet<TEntity> Entities = new();
     protected abstract TEntityId generateId();
 
-    public void Add(TEntity entity)
+    public TEntity Add(TEntity entity)
     {
         entity.Id = generateId();
         entity.CreatedAt = DateTime.UtcNow;
-        _entities.Add(entity);
+        Entities.Add(entity);
+        return entity;
     }
-    public void Delete(TEntity entity)
+    public TEntity Delete(TEntity entity)
         {
             entity.DeletedAt = DateTime.UtcNow;
-        }
-
-        public TEntity? GetById(TEntityId id)
-        {
-          TEntity? entity=_entities.FirstOrDefault(e=>e.Id.Equals(id) && e.DeletedAt.HasValue==false);  
         return entity;
         }
 
-        public IList<TEntity> GetList()
+        public TEntity? Get(Func<TEntity, bool> predicate )
         {
-            IList<TEntity> entities = _entities
-            .Where(e=>e.DeletedAt.HasValue==false) .ToList();
+          TEntity? entity=Entities.FirstOrDefault(predicate);  
+        return entity;
+        }
+
+        public IList<TEntity> GetList(Func<TEntity, bool>? predicate = null)
+        {
+        IQueryable<TEntity> query = Entities.AsQueryable();
+
+            
              return entities;
         }
 
-        public void Update(TEntity entity)
+        public TEntity Update(TEntity entity)
         {
             entity.UpdateAt = DateTime.UtcNow;
+        return entity;
         }
-    }
+
+   
+}
         
     
 
