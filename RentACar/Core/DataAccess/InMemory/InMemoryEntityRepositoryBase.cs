@@ -23,18 +23,20 @@ namespace Core.DataAccess.InMemory;
         return entity;
         }
 
-        public TEntity? Get(Func<TEntity, bool> predicate )
-        {
+        public TEntity? Get(Func<TEntity, bool> predicate)
+    {
           TEntity? entity=Entities.FirstOrDefault(predicate);  
         return entity;
         }
 
         public IList<TEntity> GetList(Func<TEntity, bool>? predicate = null)
         {
-        IQueryable<TEntity> query = Entities.AsQueryable();
+        IEnumerable<TEntity> query = _entities;
 
-            
-             return entities;
+        if(predicate is not null)
+            query=query.Where(predicate);
+        
+             return query.ToArray();
         }
 
         public TEntity Update(TEntity entity)

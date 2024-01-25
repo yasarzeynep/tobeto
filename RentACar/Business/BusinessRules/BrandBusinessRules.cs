@@ -15,7 +15,7 @@ public class BrandBusinessRules
     }
     public void CheckIfBrandNameNotExists(string brandName)
     {
-        bool isExits = _brandDal.GetList().Any(b => b.Name == brandName);
+        bool isExits = _brandDal.Get(brand => brand.Name == brandName) is not null;
         if (isExits)
         {
             throw new BusinessException("Brand already exists.");

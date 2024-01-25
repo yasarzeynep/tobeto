@@ -10,11 +10,12 @@ public class InMemoryBrandDal : InMemoryEntityRepositoryBase<Brand, int>, IBrand
 {
     protected override int generateId()
     {
-        int nextId = Entities.Count == 0 
-            ? 1 
+        int nextId = Entities.Count == 0
+            ? 1
             : Entities.Max(e => e.Id) + 1;
         return nextId;
     }
+
     // InMemoryEntityRepositoryBase<Brand, int> kalıtımın örnek uygulaması:
     //private readonly HashSet<Brand> _entities = new();
     //public void Add(Brand entity)

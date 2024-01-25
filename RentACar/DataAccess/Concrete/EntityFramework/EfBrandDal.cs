@@ -15,17 +15,12 @@ public class EfBrandDal : IBrandDal
         throw new NotImplementedException();
     }
 
-    public IList<Brand> GetBtrandsByNameSearch(string nameSearch)
+    public Brand? Get(Func<Brand, bool> predicate)
     {
         throw new NotImplementedException();
     }
 
-    public Brand? GetById(int id)
-    {
-        throw new NotImplementedException();
-    }
-
-    public IList<Brand> GetList()
+    public IList<Brand> GetList(Func<Brand, bool>? predicate = null)
     {
         throw new NotImplementedException();
     }
