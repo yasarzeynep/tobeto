@@ -11,7 +11,7 @@ public class Model:Entity<int>
     public int TransmissionId {  get; set; }
     public string Name { get; set; }
     public decimal DailyPrice { get; set; }
-    public string Year { get; set; }
+    public short Year { get; set; }
 
     //lazy  loading 
     public Brand? Brand { get; set; } = null; //one-to-one iliskisi var
@@ -19,7 +19,7 @@ public class Model:Entity<int>
     public Transmission? Transmission { get; set; } = null; //one-to-one iliskisi var
 
     public ICollection<Car>? Cars { get; set; } = null; //model ile car arasında one-to-mant iliskisi var
-    public Model(int brandId, int fuelId, int transmissionId, string name, decimal dailyPrice, string year)
+    public Model(int brandId, int fuelId, int transmissionId, string name, decimal dailyPrice, short year)
     {
         BrandId = brandId;
         FuelId = fuelId;

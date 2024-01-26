@@ -8,12 +8,14 @@ namespace Core.CrossCuttingConcerns.Exceptions;
 public class ExceptionMiddleware
 {
     private readonly RequestDelegate _next;
+
     public ExceptionMiddleware(RequestDelegate next)
     {
-        //Delegate: Bir kod türünü temsil eder.
-        //RequestDelegate: Bir HTTP Request akısındaki bir sonraki adımı temsil eder.
+        // Delegate: Bir kod bütününü temsil eder.
+        // RequestDelegate: Bir HTTP Request akışındaki bir sonraki adımı temsil eder.
         _next = next;
     }
+
     public async Task InvokeAsync(HttpContext httpContext)
     {
         // HttpContext:Bir Http Request  akısını temsil eder.
@@ -49,16 +51,18 @@ public class ExceptionMiddleware
         if (exception is BusinessException businessException)
             return createBusinessProblemDetailsResponse(httpContext, businessException);
 
+
         return createInternalProblemDetailsResponse(httpContext, exception);
     }
 
-    private Task createBusinessProblemDetailsResponse(HttpContent httpContext, BusinessException exception)
+
+    private Task createBusinessProblemDetailsResponse(HttpContext httpContext, BusinessException exception)
     {
         httpContext.Response.StatusCode = StatusCodes.Status400BadRequest;
         BusinessProblemDetails businessProblemDetails = new()
         {
             Title = "Business Exception",
-            Type = "",
+            Type = "https://doc.rentacar.com/business",
             Status = StatusCodes.Status400BadRequest,
             Detail = exception.Message,
             Instance = httpContext.Request.Path

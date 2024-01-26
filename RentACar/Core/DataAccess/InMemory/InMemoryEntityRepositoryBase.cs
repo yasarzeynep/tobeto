@@ -31,9 +31,9 @@ namespace Core.DataAccess.InMemory;
 
         public IList<TEntity> GetList(Func<TEntity, bool>? predicate = null)
         {
-        IEnumerable<TEntity> query = _entities;
+        IEnumerable<TEntity> query = Entities;
 
-        if(predicate is not null)
+        if (predicate is not null)
             query=query.Where(predicate);
         
              return query.ToArray();

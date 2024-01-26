@@ -2,6 +2,7 @@ using Business.Abstract;
 using Business.BusinessRules;
 using Business.Concrete;
 using Business.DependencyResolves;
+using Core.CrossCuttingConcerns.Exceptions;
 using DataAccess.Abstract;
 using DataAccess.Concrete.InMemory;
 using Microsoft.Extensions.DependencyInjection;
