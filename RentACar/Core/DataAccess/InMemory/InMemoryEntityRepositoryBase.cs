@@ -2,8 +2,8 @@
 
 namespace Core.DataAccess.InMemory;
 
-    public abstract  class InMemoryEntityRepositoryBase<TEntity, TEntityId> :
-         IEntityRepository<TEntity, TEntityId>
+    public abstract  class InMemoryEntityRepositoryBase<TEntity, TEntityId> 
+          : IEntityRepository<TEntity, TEntityId>
 
          where TEntity : class, IEntity<TEntityId>, new()
    {
@@ -45,7 +45,7 @@ namespace Core.DataAccess.InMemory;
         return entity;
         }
 
-   
+    
 }
         
     

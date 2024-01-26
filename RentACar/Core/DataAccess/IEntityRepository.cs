@@ -19,8 +19,8 @@ namespace Core.DataAccess
         Func<TEntity , bool>predicateFunc=predicate;
          */
         public TEntity? Get(Func<TEntity, bool> predicate);
-        public void Add(TEntity entity);
-        public void Update(TEntity entity);
-        public void Delete(TEntity entity);
+        public TEntity Add(TEntity entity);
+        public TEntity Update(TEntity entity);
+        public TEntity Delete(TEntity entity);
     }
 }
