@@ -29,6 +29,14 @@ public static class ServiceCollectionBusinessExtension
         /*Singleton:Tek bir nesne olusturur ve herkese o nu verir
          Ek odev diger yöntemleri arastırınız
          */
+
+        services    
+        .AddSingleton<IModelService, ModelManager>()
+        .AddSingleton<IModelDal, InMemoryModelDal>()
+        .AddSingleton<ModelBusinessRules>(); //Fluent Yapı
+
+
+
         services.AddAutoMapper(Assembly.GetExecutingAssembly()); // AutoMapper.Extensions.Microsoft.DependencyInjection NuGet Paketi
                                                                  // Reflection yöntemiyle Profile class'ını kalıtım alan tüm class'ları bulur ve AutoMapper'a ekler.
 

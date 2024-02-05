@@ -17,9 +17,11 @@ namespace Core.DataAccess.InMemory;
         Entities.Add(entity);
         return entity;
     }
-    public TEntity Delete(TEntity entity)
+    public TEntity Delete(TEntity entity, bool isSoftDelete = true)
         {
-            entity.DeletedAt = DateTime.UtcNow;
+            entity.DeletedAt = DateTime.UtcNow; //Soft Delete
+        if(!isSoftDelete) 
+        Entities.Remove(entity); //Hard Delete
         return entity;
         }
 
