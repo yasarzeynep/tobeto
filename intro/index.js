@@ -1,7 +1,6 @@
 
 console.log("Hello .NET 2A");
 
-
 //Type-safe degildir
 
 var number =10;
@@ -51,7 +50,7 @@ function hesapla2()
     {
         console.log(i);
     }
-   // console.log("for dongüsünün dısından hesapla2 i degeri: " , i);
+   console.log("for dongüsünün dısından hesapla2 i degeri: " , i);
     console.log(x+y);
 }
 hesapla2();
