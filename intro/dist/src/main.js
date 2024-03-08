@@ -1,7 +1,8 @@
+"use strict";
 console.log("Typescript'den Merhaba");
-var count;
+let count;
 count = 10;
 console.log(count);
-var myFunction = function () {
+let myFunction = () => {
     return 10;
 };
