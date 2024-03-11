@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { FormComponent } from './components/form/form.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 // annotation, attribute, decorator
 @Component({
   selector: 'app-root', //<app-root> <app-root>
