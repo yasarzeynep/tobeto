@@ -5,7 +5,7 @@ import { FormComponent } from './components/form/form.component';
 @Component({
   selector: 'app-root', //<app-root> <app-root>
   standalone: true, //sonradan bakılacak
-  imports: [RouterOutlet, FormComponent],
+  imports: [RouterOutlet, FormComponent, NavbarComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
