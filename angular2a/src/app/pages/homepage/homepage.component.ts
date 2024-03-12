@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { Component } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
+import { ToDo } from '../../models/toDo';
 
 @Component({
   selector: 'app-homepage',
@@ -10,20 +11,42 @@ import { Component } from '@angular/core';
   styleUrl: './homepage.component.scss'
 })
 
-export class HomepageComponent {
-  constructor(private httpClient:HttpClient) {
+export class HomepageComponent implements OnInit{
+  constructor(private httpClient:HttpClient) {}
 
-  }
-  todoList: string[] = ['Eleman 1'];
+ // todoList: string[] = ['Eleman 1'];
+ todoList: ToDo[] = [];
 
-  ngOnInit()
+  ngOnInit(): void
   {
-    console.log('ngOnInıt calıstı.');
+
+    //console.log('ngOnInıt calıstı.');
+    this.getTodos();
+   
   }
   getTodos()
 {
 //Backende istek atıp, verileri çek
 //Component Lifecycle
+this.httpClient
+.get<ToDo[]>('https://jsonplaceholder.typicode.com/todos')
+.subscribe({
+  next: (response: ToDo[]) => {
+    console.log('Backendden cevap geldi:', response);
+    this.todoList = response;
+  },
+  error: (error) => {
+    console.log('Backendden hatalı cevap geldi:', error);
+  },
+  complete: () => {
+    console.log('Backend isteği sonlandı.');
+  },
+});
 }
-  
+
+postToDo() {
+  let obj = {};
+  this.httpClient.post('link', obj).subscribe();
+}
+
 }
