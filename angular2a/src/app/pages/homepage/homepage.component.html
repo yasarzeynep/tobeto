@@ -2,11 +2,12 @@
   <!--Pipe-->
   <p>{{ today| date: "dd-MM-yy hh:mm" }}</p>
  <p>{{ 300 | currency:"tl" }}</p> 
- <p>{{ 'Merhaba'|mypipe}}</p> 
+
 
  <!-- <p>{{formatDate(today) }}</p> -->
+ <input class="form-control" placeholder="Search" [(ngModel)]="searchKey"/>
     <ul *ngIf="todoList.length > 0">
-      <li *ngFor="let item of todoList">
+      <li *ngFor="let item of todoList | filterTodolist: searchKey">
         {{ item.title }}
       </li>
     </ul>

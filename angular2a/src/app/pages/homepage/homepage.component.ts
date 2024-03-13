@@ -2,12 +2,14 @@ import { CommonModule } from '@angular/common';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { ToDo } from '../../models/toDo';
-import { MypipePipe } from '../../pipes/mypipe.pipe';
+import { FilterTodolistPipe } from '../../pipes/filter-todolist.pipe';
+import { FormsModule } from '@angular/forms';
+
 
 @Component({
   selector: 'app-homepage',
   standalone: true,
-  imports: [CommonModule,HttpClientModule, MypipePipe],
+  imports: [CommonModule, HttpClientModule, FilterTodolistPipe, FormsModule],
   templateUrl: './homepage.component.html',
   styleUrl: './homepage.component.scss'
 })
@@ -18,8 +20,10 @@ export class HomepageComponent implements OnInit{
  // todoList: string[] = ['Eleman 1'];
  todoList: ToDo[] = [];
 
+ today: Date=new Date();
 
-today: Date=new Date();
+ searchKey:string='';
+ 
   ngOnInit(): void
   {
 
