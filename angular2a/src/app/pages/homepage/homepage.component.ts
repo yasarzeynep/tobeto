@@ -4,6 +4,8 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { ToDo } from '../../models/toDo';
 import { FilterTodolistPipe } from '../../pipes/filter-todolist.pipe';
 import { FormsModule } from '@angular/forms';
+import { TodoService } from '../../services/todo.service';
+
 
 
 @Component({
@@ -15,29 +17,25 @@ import { FormsModule } from '@angular/forms';
 })
 
 export class HomepageComponent implements OnInit{
-  constructor(private httpClient:HttpClient) {}
-
  // todoList: string[] = ['Eleman 1'];
  todoList: ToDo[] = [];
 
  today: Date=new Date();
 
  searchKey:string='';
+ constructor(private todoService: TodoService) {}
  
   ngOnInit(): void
   {
-
     //console.log('ngOnInıt calıstı.');
     this.getTodos();
-   
   }
+
   getTodos()
 {
 //Backende istek atıp, verileri çek
 //Component Lifecycle
-this.httpClient
-.get<ToDo[]>('https://jsonplaceholder.typicode.com/todos')
-.subscribe({
+this.todoService.getAll().subscribe({
   next: (response: ToDo[]) => {
     console.log('Backendden cevap geldi:', response);
     this.todoList = response;
@@ -53,7 +51,7 @@ this.httpClient
 
 postToDo() {
   let obj = {};
-  this.httpClient.post('link', obj).subscribe();
+  //this.httpClient.post('link', obj).subscribe();
 }
 
 formatDate(date:Date)
