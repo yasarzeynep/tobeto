@@ -2,11 +2,12 @@ import { CommonModule } from '@angular/common';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { ToDo } from '../../models/toDo';
+import { MypipePipe } from '../../pipes/mypipe.pipe';
 
 @Component({
   selector: 'app-homepage',
   standalone: true,
-  imports: [CommonModule,HttpClientModule],
+  imports: [CommonModule,HttpClientModule, MypipePipe],
   templateUrl: './homepage.component.html',
   styleUrl: './homepage.component.scss'
 })
@@ -17,6 +18,8 @@ export class HomepageComponent implements OnInit{
  // todoList: string[] = ['Eleman 1'];
  todoList: ToDo[] = [];
 
+
+today: Date=new Date();
   ngOnInit(): void
   {
 
@@ -49,4 +52,9 @@ postToDo() {
   this.httpClient.post('link', obj).subscribe();
 }
 
+formatDate(date:Date)
+{
+//formatlama islemi 
+return date.toISOString();
+}
 }

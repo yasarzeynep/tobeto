@@ -1,4 +1,10 @@
 <div class="container mt-5">
+  <!--Pipe-->
+  <p>{{ today| date: "dd-MM-yy hh:mm" }}</p>
+ <p>{{ 300 | currency:"tl" }}</p> 
+ <p>{{ 'Merhaba'|mypipe}}</p> 
+
+ <!-- <p>{{formatDate(today) }}</p> -->
     <ul *ngIf="todoList.length > 0">
       <li *ngFor="let item of todoList">
         {{ item.title }}
