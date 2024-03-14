@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { FormComponent } from './components/form/form.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { LoadingComponent } from './components/loading/loading.component';
 // annotation, attribute, decorator
 @Component({
   selector: 'app-root', //<app-root> <app-root>
   standalone: true, //sonradan bakılacak
-  imports: [RouterOutlet, FormComponent, NavbarComponent],
+  imports: [RouterOutlet, FormComponent, NavbarComponent,LoadingComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

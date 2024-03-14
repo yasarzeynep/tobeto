@@ -18,5 +18,15 @@ export class LoginComponent implements OnInit {
     .getAll()
     .subscribe({next:(value)=>console.log(value)});
   
+
+    this.todoService
+    .getAll()
+    .subscribe({ next: (value) => console.log(value) });
+  this.todoService
+    .getAll()
+    .subscribe({ next: (value) => console.log(value) });
+  this.todoService
+    .getAll()
+    .subscribe({ next: (value) => console.log(value) });
   }
 }

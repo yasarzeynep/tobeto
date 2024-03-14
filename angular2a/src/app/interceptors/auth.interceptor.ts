@@ -6,6 +6,7 @@ export const authInterceptor: HttpInterceptorFn = (req, next) => {
 //req degsitirme
 
 //read-only
+console.log('AuthInterceptor');
 let newRequest=req.clone({setHeaders:{Authorization: 'Bearer myjwt'}});
   return next(newRequest);
 };
