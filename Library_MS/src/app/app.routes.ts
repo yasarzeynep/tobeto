@@ -1,3 +1,5 @@
+
+//uygulamadaki hangi urlin hangi  componenti gosterecegıini soyluyor
 import { Routes } from '@angular/router';
 import { HomepageComponent } from './shared/pages/homepage/homepage.component';
 import { BooklistComponent } from './features/book/pages/booklist.component';
