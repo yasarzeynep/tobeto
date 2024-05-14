@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+table.table1{
+ border: 5px black dashed;
+ width: 1000px;
+ border: solid 4px #4444FF;
+ 
+}
+
+tr.tr1 {
+
+    height: 70px;
+}
+
+tr.tr2 {
+ text-align: center;
+    height: 100px;
+}
+
+td{
+    border: solid 5px #555588;
+}
+
+tr.td1 {
+
+    text-align: center;
+}
+
+
+button.button1{
+    width:300px;
+    color:#3333EE;
+    font-weight:900;
+    text-align: center;
+}
+
+button.button2{
+    
+    background-color:#c8f309;
+    width:70%;
+    
+}
